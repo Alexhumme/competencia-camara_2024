@@ -131,6 +131,10 @@ main {
   padding: 10px;
   font-weight: bold;
 }
+.primary {
+  color: #a83636;
+  background-color: white;
+}
 .secondary {
   background-color: #a83636;
   color: white;
