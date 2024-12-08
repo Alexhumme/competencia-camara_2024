@@ -1,0 +1,141 @@
+html {
+  padding: 0px;
+  height: 100%;
+}
+
+body {
+  background-color: #f2bdbd;
+  padding: 50px;
+  margin: 0px;
+  min-height: 50vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header, .loginContainer {
+  background-color: #a83636;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding-inline: 20px;
+  align-content: center;
+}
+
+.navigator {
+  
+}
+
+.navigator  ul {
+  padding: 0px;
+  list-style: none;
+  display: inline-flex;
+}
+
+header {
+  background-color: #FA2232;
+  height: 10vh;
+}
+
+main {
+  min-height: 70vh;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content:center;
+}
+
+.loginContainer {
+  display: flex;
+  border-radius: 7px;
+  color: white; 
+  max-height: 60vh;
+  width: 90vw;
+  max-width: 700px;
+
+  box-shadow: 10px 10px 0px #141700;
+}
+
+
+.hero {
+  padding: 10px;
+  
+}
+.hero img {
+  border-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 40vw;
+  max-width: 250px;
+}
+
+.formContainer {
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 5%;
+  width: 100%;
+  padding-block: 20px;
+}
+.formContainer h2{
+  font-size: xx-large;
+  margin-bottom: 15px
+
+}
+.formContainer span {
+  font-weight: 200;
+  font-size: small;
+}
+
+.formContainer form {
+  margin-top: 20px;
+}
+.formControl {
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.formControl label {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  color:#a83636;
+}
+
+.formControl input{
+  color: white;
+  padding: 10px;
+  border-width: 2px;
+  background-color: #c28d8d;
+  border: #c28d8d solid;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.checkBoxControl {  
+  margin-bottom: 20px;
+  font-size: small
+}
+.checkBoxControl label {
+  margin-left: 10px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.btn {
+  background-color: white;
+  border: 2px white solid;
+  border-radius: 5px;
+  color: #FA2232;
+  padding: 10px;
+  font-weight: bold;
+}
+.secondary {
+  background-color: #a83636;
+  color: white;
+  border-color: #a83636;
+}
+.formControl > label + input:active{
+  background-color: aliceblue;
+}

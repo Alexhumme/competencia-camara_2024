@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <link href="./style/index.css" rel="stylesheet" />
+  <title>
+    Registro de datos
+  </title>
+</head>
+
+<body>
+  <header class="header">
+    <h3 class="pageIcon">
+      Registro de datos
+    </h3>
+    <nav class="navigator">
+      <ul class="">
+        <li>Registro</li>
+        <li>Perfil</li>
+        <li>Contacto</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="loginContainer">
+      <div class="hero">
+        <img src="./assets/login1.jpg"/>
+      </div>
+      <div class="formContainer">
+        <div>
+          <h2>Iniciar sesion</h2>
+          <span>No tienes cuenta? <a href="./register.html">registrate</a> </span>
+        </div> 
+        <form class="form">
+          <div class="formControl">
+            <label>Correo Electronico</label>
+            <input type="email" required />
+          </div>
+          <div class="formControl">
+            <label>Contraseña</label>
+            <input type="password" required />
+          </div>
+          <div class="checkBoxControl">
+            <input type="checkbox" name="sesion"/>
+            <label for="sesion">Mantener sesion iniciada</label>
+          </div>
+          <div>
+            <input type="reset" class="btn secondary">
+            <input type="submit" class="btn primary">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>
