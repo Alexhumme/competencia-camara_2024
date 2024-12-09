@@ -1,0 +1,21 @@
+/* estilos de color*/
+.primary {
+    color: #a83636;
+    background-color: rgb(255, 225, 225);
+  }
+  .secondary {
+    background-color: #a83636;
+    color: white;
+    border-color: #a83636;
+  }
+  .action {
+    cursor: pointer;
+    border: solid;
+    background-color: #a83636;
+    color: rgb(254, 105, 105);
+    border-color: #a83636;
+  }
+  .action:hover {
+    color: rgb(254, 171, 171);
+  }
+  

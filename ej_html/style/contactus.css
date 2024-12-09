@@ -1,0 +1,47 @@
+.concatcContainer {
+    padding: 20px;
+    text-align: center;
+}
+img {
+    width: 50px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+img:hover {
+    opacity: 1;
+}
+
+.devCard {
+    background-color: rgb(203, 79, 79);
+    border-radius: 10px;
+    text-align: left;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+}
+.devCard img {
+    width: 100px;
+    border-radius: 10px;
+}
+.devCard h5{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.devCard p {
+    margin: 0;
+    font-size: small;
+}
+.links {
+    justify-content: space-between;
+}
+.links div {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(203, 79, 79);
+
+}
+
+.links div:hover {
+    background-color: rgb(255, 218, 218);
+}

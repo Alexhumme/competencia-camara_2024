@@ -1,0 +1,36 @@
+/* Estilos de la barra superior de la pagina */
+
+.header {
+    display: flex;
+    padding-block: 10px;
+    justify-content: space-between;
+    padding-inline: 20px;
+    align-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .navigator {
+    align-content: center;
+  }
+  
+  .navigator  ul {
+    padding: 0px;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  /* que solo sean letras blancas los que no tengan la clase primrary*/
+  .navigator li a:not(.primary) {
+    color: white;
+  }
+  .navigator li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .navigator li {
+    color: white;
+    padding: 0px;
+    margin: 0px 10px;
+  }

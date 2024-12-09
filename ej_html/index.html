@@ -1,0 +1,112 @@
+<html lang="es">
+  <head>
+    <link href="./style/index.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registro de datos</title>
+  </head>
+
+  <body>
+    <header class="header container">
+      <h3 class="pageIcon"></h3>
+      <nav class="navigator">
+        <ul class="">
+          <li><a href="./profile.html">Home</a></li>
+          <li><a href="./contactus.html">Contact us</a></li>
+          <li><a href="./index.html" class="primary">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="loginView">
+      <div class="loginContainer container">
+        <div class="hero">
+          <img alt="login1" src="./assets/login/login1.jpg" />
+        </div>
+        <ul id="formsContainer">
+
+          <li class="formContainer loginForm">
+            <div>
+              <h2>Iniciar sesion</h2>
+              <span
+                >No tienes cuenta? <button onclick="changeForm(1)" class=" action">Registrate</button>
+              </span>
+            </div>
+            <form class="form">
+              <div class="formControl">
+                <input placeholder="example@gmail.com" type="email" required />
+                <label>Correo Electronico</label>
+              </div>
+              <div class="formControl">
+                <input placeholder="password" type="password" required />
+                <label>Contraseña</label>
+              </div>
+              <div class="checkBoxControl">
+                <input
+                  placeholder="Mantener sesion"
+                  title="Mantener sesion iniciada"
+                  type="checkbox"
+                  name="sesion"
+                />
+                <label for="sesion">Mantener sesion iniciada</label>
+              </div>
+              <div class="options">
+                <input type="submit" class="btn primary" />
+              </div>
+            </form>
+          </li>
+
+          <li class="formContainer signinForm">
+            <div>
+              <h2>Registrate</h2>
+              <span
+                >Ya tienes cuenta? <button onclick="changeForm(0)" class="action">inicia sesion</button>
+              </span>
+            </div>
+            <form class="form">
+              <div class="row">
+                <div class="formControl">
+                  <input type="text" name="name" placeholder="Tu nombre"/>
+                  <label for="name">Nombre</label>
+                </div>
+                <div class="formControl">
+                  
+                  <input type="text" name="lastName" placeholder="Tu apellido"/>
+                  <label for="lastName">Apellidos</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="formControl">
+                  <input placeholder="example@gmail.com" type="email" required />
+                  <label>Correo Electronico</label>
+                </div>
+                <div class="formControl">
+                  <input placeholder="password" type="password" required />
+                  <label>Contraseña</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="formControl"><input type="text" name="documento" placeholder="111......."><label for="documento">Numero de documento</label></div>
+              </div>
+              <div class="checkBoxControl">
+                <input
+                  placeholder="Mantener sesion"
+                  title="Aceptar terminos"
+                  type="checkbox"
+                  name="terminos"
+                />
+                <label for="terminos">Acepto terminos de privacidad</label>
+              </div>
+              <div class="options">
+                <input type="reset" class="btn secondary" />
+                <input type="submit" class="btn primary" />
+              </div>
+            </form>
+          </li>
+
+        </ul>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

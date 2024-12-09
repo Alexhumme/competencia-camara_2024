@@ -1,0 +1,107 @@
+/* el formscontainer tiene los 2 formularios de inicio de sesion y de registro*/
+
+#formsContainer { /* es un slider */
+    width: 100%;
+    height: fit-content;
+    padding-block: 0px;
+    padding-left: 20px;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    margin-right: 20px;
+    list-style: none;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .formContainer {
+    display: block; /* para que ocupe su solo su espacio propio*/
+    margin: 0px;
+    transition: 0.5s;
+    min-width: 93%;
+    padding-left: 3%;
+    padding-right: 5%;
+  }
+  
+  .formContainer h2{
+    font-size: xx-large;
+    margin-bottom: 15px
+  
+  }
+  .formContainer span {
+    font-weight: 200;
+    font-size: small;
+  }
+  
+  .formContainer form {
+    margin-top: 25px;
+  }
+  
+  .formContainer .options{
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    align-content: center;
+  }
+  
+
+  
+  .formControl { /* inputs */
+    margin-bottom: 10px;
+    padding-top: 0px;
+  }
+  
+  .formControl label { /* label de cada input */
+    margin-left: 0px;
+    color:#e9a0a0;
+    font-size: x-small;
+    line-height: 1.2lh;
+    transition: 0.5s;
+  }
+  
+  /* esa parte esta enfocada a la animacion de los label*/
+  .formControl label::before {
+    position: absolute;
+    content: ">";
+    margin-left: -10px;
+    opacity: 0;
+    transition: inherit;
+  }
+  .formControl input{
+    color: rgb(66, 19, 19);
+    padding: 10px;
+    border-width: 2px;
+    background-color: #c28d8d;
+    border: #c28d8d solid;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .formControl input:focus + label { /* Cambia el estilo del label cuando el input está activo */
+    margin-left: 10px;
+    font-weight: bold; /* Ejemplo adicional */
+    color: white;
+  }
+  .formControl input:focus + label::before {
+    opacity: 1;
+  }
+  
+  /* estilo para los input que son checkbox */
+  .checkBoxControl {  
+    margin-bottom: 20px;
+    font-size: small
+  }
+  .checkBoxControl label {
+    margin-left: 10px;
+    margin-top: 2.7px;
+   /* position: absolute;*/
+  }
+  /* botones*/
+  .btn {
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

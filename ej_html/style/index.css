@@ -1,0 +1,53 @@
+@import url(header.css);
+@import url(forms.css);
+@import url(profile.css);
+@import url(login.css);
+@import url(colors.css);
+@import url(contactus.css);
+
+/* ----- Estilos principales -----*/
+
+html {
+  padding: 0px;
+  height: 100%;
+}
+
+body {
+  background-color: #f2bdbd;
+  padding: 50px;
+  margin: 0px;
+  min-height: 50vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: #a83636;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px #141700;
+  color: white;
+}
+
+.row {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* repartir el espacio equitativamente*/
+  gap: 10px; /* Espaciado entre los elementos */
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+.block {
+  display: block;
+}
+
+main { /* Estilo de la parte principal de cada vista */
+  min-height: 70vh;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content:center;
+}
+
+
