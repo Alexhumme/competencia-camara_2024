@@ -1,0 +1,177 @@
+@import url(alex-style.css);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgba(247, 247, 247, 0.897) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Container: Se maneja el contenedor del formulario con mayor transparencia */
+.form-container {
+    background: rgba(255, 255, 255, 0.3); /* Fondo blanco con mayor transparencia */
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    
+}
+
+/* Animaciones: Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form: Se maneja la disposición de los elementos en el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Labels: Se manejan los estilos de las etiquetas */
+label {
+    color: #333; /* Cambiado para contrastar con el fondo transparente */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Inputs en general: Se manejan los estilos de los campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+input[type="tel"],
+input[type="file"],
+textarea,
+select {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 15px rgba(98, 0, 234, 0.2);
+    transform: scale(1.05);
+    outline: none;
+    background-color: #F0F8FF;
+}
+
+/* Botones en general: Se manejan los estilos de los botones */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/*button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background: linear-gradient(135deg, #ff7b00 0%, #fffb01 100%);
+    box-shadow: 0 8px 16px rgba(255, 78, 107, 0.2);
+    transform: scale(1.1);
+}*/
+
+
+.filter1:hover{
+    background: linear-gradient(135deg, #ff7b00 0%, #fffb01 100%);
+    box-shadow: 0 8px 16px rgba(255, 78, 107, 0.2);
+    transform: scale(1.1);
+}
+.filter2:hover{
+    background: linear-gradient(135deg, #ff0000 0%, #ffffff 100%);
+    box-shadow: 0 8px 16px rgba(255, 78, 107, 0.2);
+    transform: scale(1.1);
+}
+.filter3:hover{
+    background: linear-gradient(135deg, #b700ff 0%, #ffd7ff 100%);
+    box-shadow: 0 8px 16px rgba(255, 78, 107, 0.2);
+    transform: scale(1.1);
+}
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+   
+    transform: scale(0.95);
+}
+
+.cards {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+    overflow-y: auto;
+    height: calc(80vh); /* editado*/
+}
+.card-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.card-content {/* editado */
+    background-color:transparent;
+    display: flex;
+    border-radius: 20px;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 10px;
+    transition: 0.3s;
+}
+
+.Buscar{
+    padding: 15px 125px;
+    background-color: rgb(0, 61, 245);
+    color: black;
+    border: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.Buscar:hover{
+    background: linear-gradient(135deg, #ff7b00 0%, #fffb01 100%);
+    box-shadow: 0 4px 8px rgba(204, 0, 75, 0.2);
+    transform: scale(0.95);
+}
+.Buscar:active{
+   
+    transform: scale(0.95);
+}
+

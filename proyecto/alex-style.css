@@ -1,0 +1,123 @@
+main {
+    display: flex;
+}
+.card-content{
+    display: flex;
+  
+    padding: 0px;
+}
+.card-content h3 {
+    margin: 0;
+}
+.card-content img.photo{
+    min-width: 150px;
+    max-width: 100px;
+    max-height: 500px;
+    margin: 0;
+    border-radius: 20px 0 0 20px;
+}
+.card-content span img {
+    width: 15px;
+    margin-right: 10px;
+}
+.card-content .info div:first-child {
+    display: flex;
+    gap: 10px;
+    margin-block: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: left;
+}
+.tag {
+    padding: 5px 10px;
+    box-shadow: 0 0 5px;
+    border-radius: 5px;
+}
+
+.tag.event {
+    background: linear-gradient(135deg, #ff7b00 0%, #fffb01 100%);
+}
+.tag.route {
+    background: linear-gradient(135deg, #ff0000 0%, #ffffff 100%);
+}
+.tag.place {
+    background: linear-gradient(135deg, #b700ff 0%, #e7d5ff 100%);
+}
+
+.card-content .info span {
+    display: block;
+}
+.card-content .info .desc {
+    margin-bottom: 10px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.top-bar{
+    position: fixed;
+    right: 50px;
+    top: 40px;
+    justify-content: right;
+    display: flexbox;
+    padding-inline: 20px;
+}
+
+.side-bar, .side-panel{
+    margin-left: 20px;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 40px - 40px);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px gray;
+}
+.side-bar button{
+    height: 70px;
+}
+.side-bar img {
+    width: 40px;
+}
+
+.side-panel {
+    margin: 20px 20px;
+    width: 60vw;
+    justify-content: space-between;
+    
+}
+
+.options {
+    display: grid;
+}
+.searcher-container {
+    padding-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.searcher {
+    margin-top: 20px;
+    
+}
+.sider {
+    height: calc(100vh - 80px);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.map-container {
+    height: calc(100vh - 40px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+    width: 100%;
+    margin-right: 40px;
+    margin-block: 20px;
+}

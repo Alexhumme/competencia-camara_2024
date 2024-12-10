@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css.css">
+  <title>proyecto</title>
+</head>
+<body>
+    <nav class="top-bar">
+        <button class="loginButon">Registra tus Eventos</button>
+    </nav>
+    <main>
+        <div class="side-bar">
+            <button onclick="slide(0)"><img src="./assets/icons/party.png" alt=""></button>
+            <button onclick="slide(1)"><img src="./assets/icons/building.png" alt=""></button>
+        </div>
+        <aside class="side-panel">
+            <div class="sider" id="activities-sider">
+                <nav class="filters">
+                    <button class="filter1">Eventos</button>
+                    <button class="filter2">Rutas</button>
+                    <button class="filter3">Zona Turistica</button>
+                </nav>
+                <div class="searcher-container">
+                    <input name="searcher" placeholder="Buscar actividades" type="text" class="searcher">
+                </div>
+                <div class="cards">
+                    <div class="card-content event">
+                        <img alt="" class="photo" src="assets/img/treatro.jpg">
+                        <div class="info">
+                            <div>
+                                <span class="tag event">Evento</span>
+                                <h3>La bellerina - Puesta Teatral</h3>
+                            </div>
+                            <div>
+                                <span class="desc">La historia de una joven payasa que quiere aprender a bailar que conmovido a mas de 10000 personas llega a...</span>
+                                <span class=""><img src="./assets/icons/pin.png" alt=""> Biblioteca Hector Zultea</span>
+                                <span class=""><img src="./assets/icons/calendar.png" alt="">20/04/2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content route">
+                        <img alt="" class="photo" src="assets/img/ruta.jpg">
+                        <div class="info">
+                            <div>
+                                <span class="tag route">Ruta turistica</span>
+                                <h3>Ruta del rey</h3>
+                            </div>
+                            <div>
+                                <span class="desc">Visita los lugares mas emblematicos de la historia vallenata y conoce la historia de la tierra que vio nacer reyes</span>
+                                <span class=""><img src="./assets/icons/pin.png" alt=""> Biblioteca Hector Zultea</span>
+                                <span class=""><img src="./assets/icons/calendar.png" alt="">20/04/2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content place">
+                        <img alt="" class="photo" src="assets/img/flamingos.jpg">
+                        <div class="info">
+                            <div>
+                                <span class="tag place">Zona turistica</span>
+                                <h3>Santuario de los flamencos</h3>
+                            </div>
+                            <div>
+                                <span class="desc">Vea en su maximo esplendor a estas hermosas aves a traves de 7682 hectareas protegidas en un experiencia que...</span>
+                                <span class=""><img src="./assets/icons/pin.png" alt="">Riohacha 20km, Troncal del Caribe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sider" id="entities-sider">
+                <div class="searcher-container">
+                    <input name="searcher" placeholder="Buscar organizadores" type="text" class="searcher">
+                </div>
+            </div>
+
+        </aside>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </main>
+    <script src="./js/slide.js"></script>
+  
+</body>
+</html>
